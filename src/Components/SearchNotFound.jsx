@@ -5,7 +5,7 @@ const SearchNotFound = () => {
         <>
             <Container fluid="md" className=" d-flex flex-column align-items-center justify-content-center">
                 <h1>Something's wrong here...</h1>
-                <p>We can't find the data you're looking for. Try again?</p>
+                <p>The car data is empty. Try again?</p>
             </Container>
         </>
     );

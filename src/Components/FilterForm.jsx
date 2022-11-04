@@ -42,7 +42,7 @@ const FilterForm = (props) => {
                         <Col xs={12} sm={6} md={2}>
                             <Form.Group>
                                 <Form.Label>Jumlah Penumpang</Form.Label>
-                                <Form.Control type="number" placeholder="Jumlah Penumpang" onChange={(e) => setCapacity(e.target.value)} />
+                                <Form.Control type="number" min={1} placeholder="Jumlah Penumpang" onChange={(e) => setCapacity(e.target.value)} />
                             </Form.Group>
                         </Col>
                         <Col xs={12} sm={6} md={2} className="btn-cari-mobil-container">
