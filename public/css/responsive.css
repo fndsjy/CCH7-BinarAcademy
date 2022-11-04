@@ -32,6 +32,9 @@
     .nav-lg-custom img{
         margin-left: -2%;
     }
+    .navbar img {
+        padding-left:  1.5em !important;
+    }
     .nav-xl-custom{
         display: none;
     }

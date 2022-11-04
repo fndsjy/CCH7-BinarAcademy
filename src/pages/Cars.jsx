@@ -4,7 +4,7 @@ import { useEffect, useState, useCallback } from 'react';
 
 import NavbarComponent from '../Components/NavbarComponent';
 import Footer from '../Components/Footer';
-import Hero from '../Components/Hero';
+import HeaderCars from '../Components/HeroCars';
 import CarCard from '../Components/CarCard';
 import FilterForm from '../Components/FilterForm';
 import SearchNotFound from '../Components/SearchNotFound';
@@ -56,7 +56,7 @@ const Cars = () => {
         // test
         <>
             <NavbarComponent />
-            <Hero hideButton={true} />
+            <HeaderCars />
             <FilterForm onSubmit={filterCar} />
             <Container fluid="md" className="car-card-container">
                 {searched ? <Row style={{marginRight: '5em', marginInlineStart: '4.8em'}}>{filteredCar.length === 0 ? <SearchNotFound /> : filteredCar.map((car) => <CarCard key={car.id} data={car} />)}</Row> : ''}

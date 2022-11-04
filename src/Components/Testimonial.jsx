@@ -18,7 +18,7 @@ const star = 'images/testimonial-rate.png';
 const Testimonial = () => {
     return (
         <div id="testimonial">
-            <Container className="text-center">
+            <Container className="text-center" style={{marginTop: '-5%'}}>
                 {/* for header */}
                 <h2>Testimonial</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>

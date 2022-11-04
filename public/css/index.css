@@ -32,6 +32,10 @@ header {
     padding-right: 8%;
 }
 
+.navbar img {
+    padding-left:  6em !important;
+}
+
 .navbar .nav-item .nav-link {
     color: black;
     font-family: 'Helvetica';
@@ -246,6 +250,7 @@ header {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
+    margin-bottom: 10%;
 }
 
 #why-us .card {
@@ -322,17 +327,17 @@ header {
     border-radius: 8px;
 }
 
-#testimonial .carousel-card .carousel-image img {
+#testimonial .mySwiper .carousel-image img {
     width: 80px;
     height: 80px;
 }
 
-#testimonial .carousel-card .carousel-text img {
+#testimonial .mySwiper .carousel-text img {
     width: 96px;
     height: 16px;
 }
 
-#testimonial .carousel-card .carousel-desc p {
+#testimonial .mySwiper .carousel-desc p {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: lighter;
@@ -341,7 +346,7 @@ header {
     text-align: left;
 }
 
-#testimonial .carousel-card .carousel-desc h3 {
+#testimonial .mySwiper .carousel-desc h3 {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: bold;
@@ -375,46 +380,6 @@ header {
     /* background-color: #5cb85f; */
 }
 
-#testimonial .carousel-button-content::after {
-    content: none;
-}
-
-#testimonial .carousel-button-content:hover {
-    background-color: #5cb85f;
-    border: none;
-    transition: all 0.5s ease-out;
-}
-
-#testimonial .carousel-button-content span.next,
-#testimonial .carousel-button-content span.prev {
-    border: 2px solid #000;
-    width: 8px;
-    height: 8px;
-    border-top: none;
-    border-left: none;
-    transform: translateX(2px) rotate(135deg);
-}
-
-#testimonial .carousel-button-content:hover span {
-    border: 2px solid #fff;
-    border-top: none;
-    border-left: none;
-    transition: all 0.5s ease-out;
-}
-
-#testimonial .swiper-button-prev {
-    left: auto;
-    right: 50% !important;
-    margin: 0 1rem;
-}
-
-#testimonial .swiper-button-next {
-    left: 50% !important;
-    right: auto;
-    margin: 0 1rem;
-    transform: rotate(180deg);
-}
-
 /* testimonial carousel  */
 .swiper-wrapper {
     margin-bottom: 3rem;
@@ -442,7 +407,7 @@ header {
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    content: url('images/left arrow.svg') !important;
+    content: url('../images/left arrow.svg') !important;
     font-size: 24px !important;
     line-height: 0 !important;
     transform: translateX(-1px) !important;
@@ -696,7 +661,7 @@ header {
     margin-top: 10px;
 }
 
-#faq .row .col-lg-4 h1 {
+#faq h2 {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
@@ -704,7 +669,7 @@ header {
     line-height: 36px;
 }
 
-#faq .row .col-lg-4 p {
+#faq p {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 300;
@@ -712,15 +677,16 @@ header {
     line-height: 20px;
 }
 
-#faq .row .col-lg-8 .accordion {
+#faq .accordion {
+    z-index: 2;
     background: #FFFFFF;
-    border: 1px solid#D4D4D4;
+    /* border: 1px solid#D4D4D4; */
     border-radius: 4px;
-    margin: 0 0 2% 11%;
+    margin: 0 0 2% 0;
     min-width: 89%;
 }
 
-#faq .row .col-lg-8 .accordion .accordion-header {
+#faq .accordion .accordion-header {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 300;
@@ -728,12 +694,20 @@ header {
     line-height: 20px;
 }
 
-#faq .row .col-lg-8 .accordion .accordion-body {
+#faq .accordion .accordion-body {
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 100;
     font-size: 13px;
     line-height: 20px;
+}
+
+#faq .accordion-item {
+    background: #FFFFFF;
+    border: 1px solid#D4D4D4;
+    border-radius: 4px;
+    margin: 0 0 2% 2%;
+    min-width: 99%;
 }
 
 
@@ -765,7 +739,7 @@ footer .row li {
 footer .row a {
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
@@ -775,7 +749,7 @@ footer .row a {
 footer .row .row img {
     width: 55px;
     height: 30px;
-    margin-top: -13%;
+    margin-top: -6.5%;
 }
 
 footer .row #logo-custom {
